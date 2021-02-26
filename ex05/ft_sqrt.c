@@ -6,13 +6,13 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 08:09:23 by adubeau           #+#    #+#             */
-/*   Updated: 2021/02/26 07:52:24 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/02/26 09:59:47 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
-	int i;
+	long i;
 
 	i = 1;
 	if (nb == 1)
@@ -21,7 +21,7 @@ int	ft_sqrt(int nb)
 		return (0);
 	while (i * i < nb)
 		i++;
-	if (i * i == nb)
+	if ((i * i) == nb)
 		return (i);
 	else
 		return (0);
