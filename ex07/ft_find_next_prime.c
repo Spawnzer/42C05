@@ -6,13 +6,13 @@
 /*   By: adubeau <marvin@42quebec.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 11:07:03 by adubeau           #+#    #+#             */
-/*   Updated: 2021/02/25 11:44:47 by adubeau          ###   ########.fr       */
+/*   Updated: 2021/02/26 08:06:36 by adubeau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_is_prime(int nb)
 {
-	int i;
+	long i;
 
 	i = 5;
 	if (nb == 2 || nb == 3)
@@ -34,7 +34,7 @@ int	ft_find_next_prime(int nb)
 {
 	int i;
 
-	i = 1;
+	i = 2;
 	if (ft_is_prime(nb))
 		return (nb);
 	while (!ft_is_prime(nb + i))
